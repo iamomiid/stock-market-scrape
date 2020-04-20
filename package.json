@@ -1,0 +1,18 @@
+{
+	"name": "stock-market-scrape",
+	"version": "1.0.0",
+	"main": "build/index.js",
+	"repository": "git@github.com:iamomiid/stock-market-scrape.git",
+	"author": "Omid Sayfun <seyfanomid@ymail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "ts-node src/index.ts"
+	},
+	"dependencies": {
+		"@types/cheerio": "^0.22.17",
+		"@types/puppeteer": "^2.0.1",
+		"cheerio": "^1.0.0-rc.3",
+		"moment-jalaali": "^0.9.2",
+		"puppeteer": "^3.0.0"
+	}
+}
