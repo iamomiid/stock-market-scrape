@@ -6,14 +6,24 @@
 	"author": "Omid Sayfun <seyfanomid@ymail.com>",
 	"license": "MIT",
 	"scripts": {
-		"start": "ts-node src/index.ts"
+		"build": "tsc",
+		"scrape": "node build/index.js",
+		"start": "yarn build && yarn scrape",
+		"dev": "ts-node src/index.ts"
 	},
 	"dependencies": {
 		"@types/cheerio": "^0.22.17",
+		"@types/moment": "^2.13.0",
 		"@types/moment-jalaali": "^0.7.4",
 		"@types/puppeteer": "^2.0.1",
 		"cheerio": "^1.0.0-rc.3",
+		"moment": "^2.24.0",
 		"moment-jalaali": "^0.9.2",
 		"puppeteer": "^3.0.0"
+	},
+	"devDependencies": {
+		"@fast-csv/format": "^4.1.2",
+		"@fast-csv/parse": "^4.1.2",
+		"fast-csv": "^4.1.3"
 	}
 }
